@@ -1,0 +1,7 @@
+/*
+This file houses the style for the header section
+*/
+.bg-black {
+  background-color: black;
+  color: white;
+}

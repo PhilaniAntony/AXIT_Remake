@@ -1,0 +1,69 @@
+/*
+This file houses the variables and mixins of the project 
+*/
+//Variables
+
+$theme-color1:#ffffff;
+$theme-color2:#ff8b38;
+$navbar-bg:#000;
+$social-bg:#f5f5f5;
+$tab-bg :#333333;
+$form-header-bg:#f5f5f5;
+$form-bg:#fff;
+$sections-bg:#f5f5f5;
+$font-color:#000;
+$button-color:#ff8b38;
+$socials-color :#cccccc;
+
+
+
+//Fonts
+$font-stack_nav : 'Montserrat';
+$font-stack-body : 'Raleway';
+
+//Mixins Sections
+/*
+navbrand mixin
+*/
+@mixin nav-brand($weight) {
+    font-family: $font-stack_nav;
+    font-weight: $weight;
+}
+
+/*
+hover effect mixin
+*/
+@mixin header-height($height) {
+    height: $height;
+}
+
+@mixin text-size($size, $align) {
+    font-size: $size;
+    text-align: $align;
+}
+
+@mixin divider-position($position, $mag, $width) {
+    margin-left: $position;
+    margin-top: $mag;
+    width: $width;
+}
+
+@mixin margin-top($margin, $padding) {
+    margin-top: $margin;
+    padding-top: $padding;
+}
+
+@mixin nav-hover {
+    color: $theme-color2;
+    transform: scale(1.2);
+}
+
+/*
+divider mixin
+*/
+@mixin divider($color, $width, $magbot) {
+    border: 2px solid $color;
+    width: $width;
+    margin-left: 0;
+    margin-bottom: $magbot;
+}

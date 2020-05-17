@@ -1,0 +1,14 @@
+/*import fonts*/
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&family=Raleway:wght@300;400;500;600;700&display=swap";
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+@import "abstract/abstract";
+@import"components/header";
+
+/*
+body styles
+*/
+body {
+    position: relative;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
